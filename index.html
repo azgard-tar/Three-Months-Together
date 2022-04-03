@@ -13,10 +13,15 @@
   <css-doodle use="var(--rule)"></css-doodle>
   <script>
     (() => {
+      const audio = new Audio('./assets/audio.mp3');
       const imageDiv = document.querySelector('css-doodle');
       imageDiv.addEventListener('click', () => {
-        const audio = new Audio('./assets/audio.mp3');
-        audio.play();
+        if(!audio.currentTime) {
+          audio.play();
+        } else {
+          audio.pause();
+          audio.currentTime = 0;
+        }
       });
     })();
   </script>
