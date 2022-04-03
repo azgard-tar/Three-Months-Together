@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Months with My Crush</title>
+  <script src="https://unpkg.com/css-doodle@0.26.3/css-doodle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="image" id="image"> </div>
+  <css-doodle use="var(--rule)"></css-doodle>
+  <script>
+    (() => {
+      const imageDiv = document.querySelector('css-doodle');
+      imageDiv.addEventListener('click', () => {
+        const audio = new Audio('./assets/audio.mp3');
+        audio.play();
+      });
+    })();
+  </script>
+</body>
+</html>
