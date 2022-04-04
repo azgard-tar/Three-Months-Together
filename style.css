@@ -12,11 +12,12 @@ html, body {
 }
 
 .image {
-  width: 450px;
-  height: 450px; 
-  background-image: url(./assets/my_crush.png);
+  width: 55vmin;
+  height: 55vmin; 
+  background-image: url(./assets/my_crush.png), radial-gradient(circle, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   position: absolute;
   border-radius: 50%;
 }

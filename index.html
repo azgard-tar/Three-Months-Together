@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="image" id="image"> </div>
+  <div class="image"></div>
   <css-doodle use="var(--rule)"></css-doodle>
   <script>
     (() => {
       const audio = new Audio('./assets/audio.mp3');
-      const imageDiv = document.querySelector('css-doodle');
-      imageDiv.addEventListener('click', () => {
+      const doodleDiv = document.querySelector('css-doodle');
+      doodleDiv.addEventListener('click', () => {
         if(!audio.currentTime) {
           audio.play();
         } else {
